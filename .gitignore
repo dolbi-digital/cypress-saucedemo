@@ -1,0 +1,7 @@
+# .gitignore
+node_modules/
+allure-report/
+allure-results/
+cypress/videos/
+cypress/screenshots/
+.DS_Store
