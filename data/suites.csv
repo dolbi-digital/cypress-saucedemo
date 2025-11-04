@@ -1,3 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","3009","adds one item, checks out to completion","SMOKE","Tue Nov 04 15:00:53 UTC 2025","passed","Tue Nov 04 15:00:56 UTC 2025","","Checkout","",""
-"","2129","logs in and lands on inventory with core UI visible","SMOKE","Tue Nov 04 15:00:45 UTC 2025","passed","Tue Nov 04 15:00:47 UTC 2025","","Auth","",""
+"","2978","adds one item, checks out to completion","SMOKE","Tue Nov 04 15:05:04 UTC 2025","passed","Tue Nov 04 15:05:07 UTC 2025","","Checkout","",""
+"","2162","logs in and lands on inventory with core UI visible","SMOKE","Tue Nov 04 15:04:56 UTC 2025","passed","Tue Nov 04 15:04:58 UTC 2025","","Auth","",""
