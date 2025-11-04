@@ -21,25 +21,20 @@ describe('SMOKE #2 - Minimal purchase flow (1 item)', () => {
   it('adds one item, checks out to completion', () => {
     cy.allure().parentSuite('SMOKE').suite('Checkout').severity('blocker').tag('smoke','checkout')
 
-    // Login
     LoginPage.visit()
     LoginPage.login('standard_user', 'secret_sauce')
     InventoryPage.assertOnPage()
 
-    // Add single item
     InventoryPage.addToCartByName(itemName)
     Header.cartBadgeShouldEqual(1)
 
-    // Cart & checkout
     Header.openCart()
     CartPage.assertHasItem(itemName)
     CartPage.checkout()
 
-    // Customer info -> continue
     CheckoutStepOnePage.fillInfo(buyer)
     CheckoutStepOnePage.continue()
 
-    // Finish and assert
     CheckoutStepTwoPage.finish()
     CheckoutCompletePage.assertCompleted()
   })
